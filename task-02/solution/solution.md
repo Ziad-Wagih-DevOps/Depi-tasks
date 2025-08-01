@@ -1,5 +1,6 @@
-#configuration file to make nginx listen in port 85 , caching , edit in page of unknown path
+#task-02:Linux nginx wep server
 ```bash
+#cofiguration file code to make nginx listen in port 89 in two different path , enable cashing , customization page of unknown path
 nano /etc/nginx/conf.d/two-routes.conf
 ```
 ![Image 1](./screenshots/1-open-two-routes.conf.png)
