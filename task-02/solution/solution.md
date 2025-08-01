@@ -4,7 +4,6 @@ nano /etc/nginx/conf.d/two-routes.conf
 ```
 ![Image 1](./screenshots/1-open-two-routes.conf.png)
 ![Image 2](./screenshots/2-editor-two-routes.conf.png)
-
 #html code for image path
 ```bash
 nano /var/www/images/image/index.html
