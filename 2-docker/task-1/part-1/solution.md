@@ -5,8 +5,7 @@
 docker pull nginx:latest
 This downloads the latest Nginx image from Docker Hub.
 
-## 2️⃣ Save Image to a Tar File
-```bash
+### 2️⃣ Save Image to a Tar File
 docker save nginx:latest -o nginx-image.tar
 This exports the image to a local file called nginx-image.tar.
 
