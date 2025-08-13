@@ -1,8 +1,8 @@
 # Nginx Docker Task
 
 1️⃣ Pull Nginx Image
-
-'docker pull nginx:latest'
+```bash
+docker pull nginx:latest
 
 This downloads the latest Nginx image from Docker Hub.
 
