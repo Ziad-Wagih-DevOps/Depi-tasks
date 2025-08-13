@@ -32,7 +32,7 @@ docker exec -it mynginx /bin/bash
 
 Example: Change HTML index page
 
-echo '<h1>Hello from custom Nginx!</h1>' > /usr/share/nginx/html/index.html
+echo 'Hello from custom Nginx!' > /usr/share/nginx/html/index.html
 
 exit
 
