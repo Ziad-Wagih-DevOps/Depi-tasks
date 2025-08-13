@@ -36,7 +36,7 @@ Example: Change HTML index page
 
 ***exit***
 
-##6️⃣ Commit Changes to a New Image
+6️⃣ Commit Changes to a New Image
 ---
 ***docker commit mynginx nginx-custom***
 
