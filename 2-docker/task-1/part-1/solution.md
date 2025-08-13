@@ -44,7 +44,7 @@ This saves the modified container as a new image called nginx-custom.
 
 7️⃣ Run Custom Image With Multiple Ports
 
-docker run -d --name mynginx-multi -p 8080:80 -p 8081:80 -p 8443:443 nginx-custom
+docker run -d --name mynginx-multi -p 8081:80 -p 8082:80 -p 8443:443 nginx-custom
 
 This will:
 
