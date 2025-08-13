@@ -2,7 +2,7 @@
 
 1️⃣ Pull Nginx Image
 
-docker pull nginx:latest
+'docker pull nginx:latest'
 
 This downloads the latest Nginx image from Docker Hub.
 
