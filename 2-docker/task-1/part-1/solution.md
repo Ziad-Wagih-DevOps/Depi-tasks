@@ -1,11 +1,11 @@
 # Nginx Docker Task
 
 ##1️⃣ Pull Nginx Image
-
+---
 ***docker pull nginx:latest***
 
 This downloads the latest Nginx image from Docker Hub.
----
+
 ##2️⃣ Save Image to a Tar File
 
 ***docker save nginx:latest -o nginx-image.tar***
