@@ -20,15 +20,15 @@ Note: On Windows use mvnw.cmd package.
 
 **Step 2**: Run the application
 
-**java -jar target/spring-petclinic-*.jar**
+**java -jar target/spring-petclinic-3.5.0-SNAPSHOT.jar --server.port=9092**
 
-The application will start on http://localhost:8080.
+The application will start on http://localhost:9092.
 
 **Step 3**: Access the application
 
 Open your browser and go to:
 
-http://localhost:8080
+http://localhost:9092
 
 3- Run with Docker
 -
