@@ -44,7 +44,7 @@ target/spring-petclinic-*.jar
 
 **Step 2**: Run the JAR in Docker
 
-***docker run -d \
+**docker run -d \
   -v $(pwd)/target:/app \
   -w /app \
   -p 9091:9091 \
