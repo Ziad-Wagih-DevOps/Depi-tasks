@@ -24,7 +24,7 @@ Note: On Windows use mvnw.cmd package.
 
 The application will start on http://localhost:8080.
 
-Step 3: Access the application
+**Step 3**: Access the application
 
 Open your browser and go to:
 
