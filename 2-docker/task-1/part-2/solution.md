@@ -4,74 +4,69 @@
 
 Clone the GitHub repository:
 
-```bash
-git clone https://github.com/spring-projects/spring-petclinic.git
-cd spring-petclinic
-2. Run Locally
+***git clone https://github.com/spring-projects/spring-petclinic.git***
+
+***cd spring-petclinic***
+
+2-Run Locally
+--
 Spring PetClinic uses Maven to build and run the application.
 
-Step 1: Build the project
-bash
-Copy
-Edit
-./mvnw package
+**Step 1**: Build the project
+
+***./mvnw package -DskipTests***
+
 Note: On Windows use mvnw.cmd package.
 
-Step 2: Run the application
-bash
-Copy
-Edit
-./mvnw spring-boot:run
-The application will start on http://localhost:8080.
+**Step 2**: Run the application
 
-Step 3: Access the application
+**java -jar target/spring-petclinic-3.5.0-SNAPSHOT.jar --server.port=9092**
+
+The application will start on http://localhost:9092.
+
+**Step 3**: Access the application
+
 Open your browser and go to:
 
-arduino
-Copy
-Edit
-http://localhost:8080
-3. Run with Docker (without Dockerfile)
+http://localhost:9092
+
+3- Run with Docker
+-
 We can run Spring PetClinic using the official Maven + JDK image.
 
-Step 1: Build a JAR
-bash
-Copy
-Edit
-./mvnw package -DskipTests
+**Step 1**: Build a JAR
+
+**./mvnw package -DskipTests**
+
 After building, the JAR file is located in:
 
-bash
-Copy
-Edit
 target/spring-petclinic-*.jar
-Step 2: Run the JAR in Docker
-bash
-Copy
-Edit
-docker run -it --rm \
+
+**Step 2**: Run the JAR in Docker
+
+**docker run -d \
   -v $(pwd)/target:/app \
   -w /app \
-  -p 8080:8080 \
+  -p 9091:9091 \
   openjdk:17-jdk \
-  java -jar spring-petclinic-*.jar
+  spring-petclinic-3.5.0-SNAPSHOT.jar --server.port=9091**
+  
 Explanation:
 
 -v $(pwd)/target:/app: Mounts the JAR folder into the container.
 
 -w /app: Sets working directory in the container.
 
--p 8080:8080: Maps container port 8080 to host port 8080.
+-p 9091:9091: Maps container port 9091 to host port 9091.
 
 openjdk:17-jdk: Docker image with JDK 17.
 
-java -jar spring-petclinic-*.jar: Runs the application.
+spring-petclinic-3.5.0-SNAPSHOT.jar --server.port=9091: Runs the application.
 
-Step 3: Access the application
+**Step 3**: Access the application
+
 Open your browser at:
 
-arduino
-Copy
-Edit
-http://localhost:8080
-✅ Application is now running locally and inside Docker without writing a Dockerfile.
+http://localhost:9091
+
+✅ Application is now running locally and inside Docker.
