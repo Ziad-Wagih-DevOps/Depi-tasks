@@ -63,7 +63,7 @@ openjdk:17-jdk: Docker image with JDK 17.
 
 spring-petclinic-3.5.0-SNAPSHOT.jar --server.port=9091: Runs the application.
 
-Step 3: Access the application
+**Step 3**: Access the application
 
 Open your browser at:
 
