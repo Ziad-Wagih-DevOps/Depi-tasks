@@ -1,6 +1,6 @@
 # Docker Training Task-1
 
-This repository contains two main parts completed during Docker learning under the supervision of Eng. Ali Saleh. The tasks demonstrate working with Docker images, containers, and running applications inside Docker.
+This folder contains two main parts completed during Docker learning under the supervision of Eng. Ali Saleh. The task demonstrate working with Docker images, containers, and running applications inside Docker.
 
 ---
 
