@@ -25,7 +25,11 @@ cd spring-petclinic
 
 ```
 
-### 2️⃣ Build the Application
+### 2️⃣ Ensure java install and The path is recognized correctly
 ```bash
-./mvnw package -DskipTests
+echo $JAVA_HOME
+java -version
+javac -version
+
+
 
