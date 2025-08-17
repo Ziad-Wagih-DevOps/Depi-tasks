@@ -23,6 +23,8 @@ We will implement the solution with:
 git clone https://github.com/spring-projects/spring-petclinic.git
 cd spring-petclinic
 
+---
+
 ### 2️⃣ Build the Application
 ```bash
 ./mvnw package -DskipTests
