@@ -30,6 +30,7 @@ cd spring-petclinic
 echo $JAVA_HOME
 java -version
 javac -version
+![java Screenshot](./screenshots/1-java install.png)
 
 
 
