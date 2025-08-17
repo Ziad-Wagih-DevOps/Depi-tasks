@@ -31,7 +31,7 @@ echo $JAVA_HOME
 java -version
 javac -version
 ```
-![java Screenshot](2-docker/task-4/screenshots/1-java install.png)
+![java Screenshot](https://github.com/Ziad-Wagih-DevOps/Depi-tasks/blob/main/2-docker/task-4/screenshots/1-java%20install.png?raw=true)
 
 
 
