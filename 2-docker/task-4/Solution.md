@@ -368,6 +368,10 @@ up → Starts the services defined in the file. If containers don’t exist yet,
 
 -d → Runs everything in detached mode, meaning it works in the background without blocking your terminal.
 
+**access app 1 : http://localhost:32768**
+
+![java Screenshot](https://github.com/Ziad-Wagih-DevOps/Depi-tasks/blob/main/2-docker/task-4/screenshots/1-java%20install.png?raw=true)
+
 
 
 
