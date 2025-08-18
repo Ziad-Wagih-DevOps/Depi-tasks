@@ -214,6 +214,8 @@ docker compose up -d
 ```
 Open application in your browser to ensure it's running: http://localhost:7070
 
+![Access app](https://github.com/Ziad-Wagih-DevOps/Depi-tasks/blob/main/2-docker/task-4/screenshots/4-%20access%20application.png?raw=true)
+
 Open your My-SQL database to ensure it's running : 
 ```bash
 docker exec -it petclinic-mysql bash
@@ -258,6 +260,7 @@ Runs a SQL query to get all the rows and columns from the table owners.
 
 The result shows all the data saved in that table.
 
+![data base](https://github.com/Ziad-Wagih-DevOps/Depi-tasks/blob/main/2-docker/task-4/screenshots/5-%20database.png?raw=true)
 
 
 
