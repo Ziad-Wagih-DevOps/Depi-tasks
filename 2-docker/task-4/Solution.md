@@ -149,38 +149,63 @@ volumes:
   petclinic-data:
 ```
 **📄 Docker Compose Explanation**
+
 This file defines a multi-container setup for the PetClinic app and its MySQL database.
+
 **🔹 MySQL Service:**
+
 Image: MySQL 8 official image.
+
 Container name: petclinic-mysql.
+
 Restart policy: Always restart if stopped.
+
 Environment variables:
+
 MYSQL_ROOT_PASSWORD: root password.
+
 MYSQL_DATABASE: creates DB petclinic.
+
 MYSQL_USER + MYSQL_PASSWORD: non-root user for the app.
+
 Volumes: Stores database files in mysql-data.
+
 Network: Connected to petclinic-net.
+
 Healthcheck: Ensures MySQL is running before app starts.
 
 **🔹 PetClinic Service:**
+
 Build: From local Dockerfile.
+
 Container name: spring-petclinic.
+
 Ports: Maps 7070 (host) → 8080 (container).
+
 Network: Connected to petclinic-net.
+
 depends_on: Waits for MySQL to be healthy.
+
 Environment variables: Configures DB connection.
+
 Volumes: Persists app data in petclinic-data.
 
 **🔹 Networks:**
+
 petclinic-net: Custom network for inter-service communication.
 
 **🔹 Volumes:**
+
 mysql-data: Persists MySQL DB files.
+
 petclinic-data: Persists PetClinic app data.
 
 **✅ In short:**
+
 MySQL container runs the DB with persistence and health checks.
+
 PetClinic container runs the app and connects to MySQL.
+
 Both share a custom network and persistent volumes.
 
 ### 6️⃣ run compose file :
@@ -197,6 +222,42 @@ USE petclinic;
 SHOW TABLES;
 SELECT * FROM owners;
 ```
+**explanation**
+
+**1. docker exec -it petclinic-mysql bash**
+
+This opens an interactive shell (bash) inside the running MySQL container named petclinic-mysql.
+
+It’s like “entering” the container so you can run commands inside it.
+
+**2. mysql -u petuser -p**
+
+Starts the MySQL client inside the container.
+
+-u petuser → login with username petuser.
+
+-p → it will ask you for a password (you’ll type petpass).
+
+**3. USE petclinic;**
+
+Tells MySQL to switch to the database named petclinic.
+
+From now on, all SQL commands will run inside this database.
+
+**4. SHOW TABLES;**
+
+Lists all the tables inside the current database (petclinic).
+
+For example: owners, pets, visits, etc.
+
+**5. SELECT * FROM owners;**
+
+Runs a SQL query to get all the rows and columns from the table owners.
+
+* means “all columns”.
+
+The result shows all the data saved in that table.
+
 
 
 
