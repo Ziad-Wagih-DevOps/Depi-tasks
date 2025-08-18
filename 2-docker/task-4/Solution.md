@@ -368,10 +368,19 @@ up → Starts the services defined in the file. If containers don’t exist yet,
 
 -d → Runs everything in detached mode, meaning it works in the background without blocking your terminal.
 
+![containers](https://github.com/Ziad-Wagih-DevOps/Depi-tasks/blob/main/2-docker/task-4/screenshots/7-Containers.png?raw=true)
+
 **access app 1 : http://localhost:32768**
 
-![java Screenshot](https://github.com/Ziad-Wagih-DevOps/Depi-tasks/blob/main/2-docker/task-4/screenshots/1-java%20install.png?raw=true)
+![app1](https://github.com/Ziad-Wagih-DevOps/Depi-tasks/blob/main/2-docker/task-4/screenshots/8-Deploy%20app%201.png?raw=true)
 
+**access app 2 : http://localhost:32769**
+
+![app2](https://github.com/Ziad-Wagih-DevOps/Depi-tasks/blob/main/2-docker/task-4/screenshots/9-deploy%20app2.png?raw=true)
+
+**access app 3 : http://localhost:32770**
+
+![app3](https://github.com/Ziad-Wagih-DevOps/Depi-tasks/blob/main/2-docker/task-4/screenshots/10-%20deploy%20app3.png?raw=true)
 
 
 
