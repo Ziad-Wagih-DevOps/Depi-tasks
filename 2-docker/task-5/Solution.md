@@ -13,7 +13,7 @@ It supports two environments (**Dev with MySQL** and **Prod with PostgreSQL**) a
 
 - **Nexus** → for managing Docker images. 
 
-**importance of nexus : **
+**importance of nexus :**
 Your team’s “internal app store” for dependencies, artifacts, and images. It makes your builds faster, safer, and more controlled.
 
 ---
