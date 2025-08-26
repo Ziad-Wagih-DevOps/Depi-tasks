@@ -75,7 +75,7 @@ Launch **two Ubuntu EC2 instances**:
 
 ---
 
-### 4. Connect to AWS Instances
+### 4. Connect to AWS Instances from controller node
 
 Move to the `.pem` location and fix permissions:
 
