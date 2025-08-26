@@ -66,8 +66,12 @@ Launch **two Ubuntu EC2 instances**:
 - Type: `t2.micro`  
 - Key Pair: Create and download `.pem` file  
 - Security Group: Allow SSH (22) from your internet
+  
   tip:to best security make it from your public ip
+  
 -screen for configuration of managed-node1:
+!(vm1config(1))[https://github.com/Ziad-Wagih-DevOps/Depi-tasks/blob/main/Ansible/task-1/screenshots/3-vm1config(1).png?raw=true]
+!(vm2config(2))[https://github.com/Ziad-Wagih-DevOps/Depi-tasks/blob/main/Ansible/task-1/screenshots/4-vm1config(2).png?raw=true]
 
 ---
 
@@ -143,5 +147,5 @@ ansible -i hosts.ini aws_nodes -m ping
 node1 | SUCCESS => {"changed": false, "ping": "pong"}
 node2 | SUCCESS => {"changed": false, "ping": "pong"}
 ```
-screen here !
+!(ping2vm)[https://github.com/Ziad-Wagih-DevOps/Depi-tasks/blob/main/Ansible/task-1/screenshots/10-ping%202vm.png?raw=true]
 ---
