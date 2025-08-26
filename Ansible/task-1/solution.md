@@ -70,8 +70,8 @@ Launch **two Ubuntu EC2 instances**:
   tip:to best security make it from your public ip
   
 -screen for configuration of managed-node1:
-!(vm1config(1))[https://github.com/Ziad-Wagih-DevOps/Depi-tasks/blob/main/Ansible/task-1/screenshots/3-vm1config(1).png?raw=true]
-!(vm2config(2))[https://github.com/Ziad-Wagih-DevOps/Depi-tasks/blob/main/Ansible/task-1/screenshots/4-vm1config(2).png?raw=true]
+![vm1config(1)](https://github.com/Ziad-Wagih-DevOps/Depi-tasks/blob/main/Ansible/task-1/screenshots/3-vm1config(1).png?raw=true)
+![vm2config(2)](https://github.com/Ziad-Wagih-DevOps/Depi-tasks/blob/main/Ansible/task-1/screenshots/4-vm1config(2).png?raw=true)
 
 ---
 
