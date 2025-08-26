@@ -147,5 +147,5 @@ ansible -i hosts.ini aws_nodes -m ping
 node1 | SUCCESS => {"changed": false, "ping": "pong"}
 node2 | SUCCESS => {"changed": false, "ping": "pong"}
 ```
-!(ping2vm)[https://github.com/Ziad-Wagih-DevOps/Depi-tasks/blob/main/Ansible/task-1/screenshots/10-ping%202vm.png?raw=true]
+![ping2vm](https://github.com/Ziad-Wagih-DevOps/Depi-tasks/blob/main/Ansible/task-1/screenshots/10-ping%202vm.png?raw=true)
 ---
