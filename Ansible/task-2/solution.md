@@ -93,7 +93,7 @@ chmod 600 ~/.ssh/authorized_keys
 ## in master: ⚙ Step 4: Ansible Inventory (hosts.ini)
 
 ```ini
-[build-push]
+[build_push]
 3.144.130.43 ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa
 
 [pull]
@@ -150,10 +150,10 @@ app_dir: "/home/ubuntu/spring-petclinic"
     - docker-login
 
 - name: Build & Push PetClinic image
-  hosts: build-push
+  hosts: build_push
   become: yes
   roles:
-    - build-push
+    - build_push
 
 - name: Pull PetClinic image
   hosts: pull
@@ -246,9 +246,9 @@ app_dir: "/home/ubuntu/spring-petclinic"
 
 ---
 
-## ⚙ Step 11: build-push Role
+## ⚙ Step 11: build_push Role
 
-**Tasks (roles/build-push/tasks/main.yml)**
+**Tasks (roles/build_push/tasks/main.yml)**
 
 ```yaml
 - name: Clone Spring PetClinic repo
