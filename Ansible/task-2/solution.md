@@ -1,4 +1,4 @@
-```markdown
+
 # Ansible Task 2: AWS Instances with Dockerized Spring PetClinic by ansible
 
 ## 🎯 Objective
