@@ -126,6 +126,7 @@ dockerhub_user: "ziadwagih7"
 dockerhub_pass: "your-token-pass"
 ```
 > This file allows Ansible to log in to Docker Hub securely when building, pushing, or pulling Docker images, without exposing your credentials in the playbook.
+> i used password as a token and give it read&write access for best security
 ---
 
 ## ⚙ Step 7: Shared Variables (group_vars/all.yml)
@@ -243,7 +244,6 @@ app_dir: "/home/ubuntu/spring-petclinic"
     username: "{{ dockerhub_user }}"
     password: "{{ dockerhub_pass }}"
 ```
-
 ---
 
 ## ⚙ Step 11: build_push Role
@@ -395,7 +395,7 @@ ENTRYPOINT ["java","-jar","app.jar"]
 ```bash
 curl http://<EC2-PUBLIC-IP>:8080
 ```
-1. Check app running in browser in localhost :
+. Check app running in browser in localhost :
 
 ```bash
 http://<EC2-PUBLIC-IP>:8080
