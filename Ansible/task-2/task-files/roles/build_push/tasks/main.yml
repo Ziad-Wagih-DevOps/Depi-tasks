@@ -1,0 +1,41 @@
+---
+- name: Clone Spring PetClinic repo
+  git:
+    repo: "https://github.com/spring-projects/spring-petclinic.git"
+    dest: "{{ app_dir }}"
+    version: main
+
+- name: Create Dockerfile
+  template:
+    src: Dockerfile.j2
+    dest: "{{ app_dir }}/Dockerfile"
+
+- name: Build Docker Image
+  docker_image:
+    name: "{{ docker_repo }}"
+    build:
+      path: "{{ app_dir }}"
+    source: build
+    tag: latest
+
+- name: Get local image info
+  community.docker.docker_image_info:
+    name: "{{ docker_repo }}:latest"
+  register: local_image
+
+- name: Get remote image info
+  community.docker.docker_image_info:
+    name: "{{ docker_repo }}:latest"
+  register: remote_image
+  ignore_errors: yes   # when image don't in remote
+
+- name: Push image if local != remote
+  docker_image:
+    name: "{{ docker_repo }}"
+    tag: latest
+    push: yes
+    source: local
+  when: 
+    - local_image.images | length > 0
+    - remote_image.images | length == 0 or local_image.images[0].Id != remote_image.images[0].Id
+

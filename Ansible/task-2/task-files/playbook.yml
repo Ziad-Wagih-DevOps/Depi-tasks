@@ -1,0 +1,27 @@
+---
+- name: Setup prerequisites & Dockerhub login
+  hosts: allservers
+  become: yes 
+  vars_files:
+    - vault.yml
+  roles:
+    - common
+    - docker-login
+
+- name: Build & Push PetClinic image
+  hosts: build_push
+  become: yes
+  roles:
+    - build_push
+
+- name: Pull PetClinic image
+  hosts: pull
+  become: yes
+  roles:
+    - pull
+
+- name: Run PetClinic container
+  hosts: allservers
+  become: yes
+  roles:
+    - run

@@ -1,0 +1,45 @@
+---
+- name: Update apt repo
+  apt:
+    update_cache: yes
+    cache_valid_time: 3600
+
+- name: Gather installed packages facts
+  package_facts:
+    manager: apt
+
+- name: Install required packages
+  apt:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - apt-transport-https
+    - ca-certificates
+    - curl
+    - software-properties-common
+    - git
+    - openjdk-17-jdk
+  when: item not in ansible_facts.packages
+
+- name: Add Docker GPG key
+  apt_key:
+    url: https://download.docker.com/linux/ubuntu/gpg
+    state: present
+
+- name: Add Docker repository
+  apt_repository:
+    repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable
+    state: present
+
+- name: Install Docker
+  apt:
+    name: docker-ce
+    state: present
+    update_cache: yes
+  notify: Restart Docker
+
+- name: Ensure Docker is running
+  service:
+    name: docker
+    state: started
+    enabled: true

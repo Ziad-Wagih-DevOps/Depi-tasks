@@ -1,0 +1,22 @@
+---
+- name: Get local image info
+  community.docker.docker_image_info:
+    name: "{{ docker_repo }}:latest"
+  register: local_image
+  ignore_errors: yes
+
+- name: Get remote image info
+  community.docker.docker_image_info:
+    name: "{{ docker_repo }}:latest"
+  register: remote_image
+  ignore_errors: yes
+
+- name: Pull image if digest differs
+  docker_image:
+    name: "{{ docker_repo }}"
+    tag: latest
+    source: pull
+  when: 
+    - remote_image.images | length > 0
+    - local_image.images | length == 0 or local_image.images[0].Id != remote_image.images[0].Id
+  notify: Restart PetClinic container

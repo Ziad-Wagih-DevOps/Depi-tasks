@@ -1,0 +1,10 @@
+---
+- name: Restart PetClinic container
+  docker_container:
+    name: petclinic
+    image: "{{ docker_repo }}"
+    state: started
+    restart_policy: always
+    recreate: true
+    published_ports:
+      - "8080:8080"
