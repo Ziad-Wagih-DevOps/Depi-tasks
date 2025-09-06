@@ -1,5 +1,10 @@
-
 # Ansible Task 2: AWS Instances with Dockerized Spring PetClinic by ansible
+
+**By:** ENG/Ziad Wagih Emam  
+**Under supervision:** ENG/Ali Saleh  
+**In:** DevOps Egypt Digital Pioneers Initiative  
+
+---
 
 ## 🎯 Objective
 
