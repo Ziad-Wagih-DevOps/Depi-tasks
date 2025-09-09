@@ -1,8 +1,12 @@
+# Jenkins Task 1 
 
+**By:** ENG/Ziad Wagih Emam  
+**Under supervision:** ENG/Ali Saleh  
+**In:** DevOps Egypt Digital Pioneers Initiative  
 
+---
 
-
-# 🚀 Run Spring PetClinic with Jenkins Pipeline
+## 🚀 Run Spring PetClinic with Jenkins Pipeline
 
 This guide shows how to run the [Spring PetClinic](https://github.com/spring-projects/spring-petclinic.git) application using **Jenkins Pipeline**.
 
@@ -34,6 +38,7 @@ fork spring-petclinic repo to your account
 
 in managed jenkins add github credintials
 to prevent http 403 error for your repo
+
 ---
 
 ## 2. Create Jenkins Pipeline Job
