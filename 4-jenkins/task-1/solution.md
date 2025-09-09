@@ -16,7 +16,7 @@ in this task i run the [Spring PetClinic](https://github.com/spring-projects/spr
 
 - Ubuntu/Debian machine (or WSL)
 - Jenkins installed and running (`http://localhost:7070`)
-- Java 17+ installed
+- JDK 17+ installed
 - Git installed
 - Maven installed
 
