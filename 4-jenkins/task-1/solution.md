@@ -49,7 +49,7 @@ to prevent http 403 error for your repo
    - **Pipeline script from SCM**
    - SCM: **Git**
    - Repository URL: `https://github.com/Ziad-Wagih-DevOps/spring-petclinic.git`
-   - Branch: `\*main`
+   - Branch: `*\main`
 
 ---
 
