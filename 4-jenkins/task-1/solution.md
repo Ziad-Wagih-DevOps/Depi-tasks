@@ -8,7 +8,7 @@
 
 ## 🚀 Run Spring PetClinic with Jenkins Pipeline
 
-This guide shows how to run the [Spring PetClinic](https://github.com/spring-projects/spring-petclinic.git) application using **Jenkins Pipeline**.
+in this task i run the [Spring PetClinic](https://github.com/spring-projects/spring-petclinic.git) application using **Jenkins Pipeline**.
 
 ---
 
